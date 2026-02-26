@@ -15,3 +15,15 @@ spring:
     properties:
       hibernate:
         show_sql: true
+
+## padrão de cores ansi nos logs da aplicação
+  output:
+    ansi:
+      enabled: always
+## habilitando niveis de log por pacote
+logging:
+  level:
+    com.ead: TRACE
+    root: INFO
+    org.hibernate: INFO
+    org.springframework.web:
